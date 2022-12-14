@@ -11,6 +11,7 @@
 		89F41A43294A2ADA00A7BED8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A42294A2ADA00A7BED8 /* ContentView.swift */; };
 		89F41A45294A2ADC00A7BED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F41A44294A2ADC00A7BED8 /* Assets.xcassets */; };
 		89F41A48294A2ADC00A7BED8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F41A47294A2ADC00A7BED8 /* Preview Assets.xcassets */; };
+		89F41A51294A2EFF00A7BED8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A50294A2EFF00A7BED8 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		89F41A42294A2ADA00A7BED8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89F41A44294A2ADC00A7BED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89F41A47294A2ADC00A7BED8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89F41A50294A2EFF00A7BED8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				89F41A40294A2ADA00A7BED8 /* side_project_chloeApp.swift */,
 				89F41A42294A2ADA00A7BED8 /* ContentView.swift */,
+				89F41A50294A2EFF00A7BED8 /* Model.swift */,
 				89F41A44294A2ADC00A7BED8 /* Assets.xcassets */,
 				89F41A46294A2ADC00A7BED8 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F41A51294A2EFF00A7BED8 /* Model.swift in Sources */,
 				89F41A43294A2ADA00A7BED8 /* ContentView.swift in Sources */,
 				89F41A41294A2ADA00A7BED8 /* side_project_chloeApp.swift in Sources */,
 			);
