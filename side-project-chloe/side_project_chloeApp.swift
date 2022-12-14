@@ -9,6 +9,7 @@ struct side_project_chloeApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(model)
+//            QuizView(quizGame: QuizGame())
         }
     }
 }
