@@ -25,13 +25,11 @@
 		89F41A6B294A37EB00A7BED8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A6A294A37EB00A7BED8 /* NotificationsView.swift */; };
 		89F41A6D294A381B00A7BED8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A6C294A381B00A7BED8 /* ProfileView.swift */; };
 		89F41A71294A38C500A7BED8 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A70294A38C500A7BED8 /* CourseView.swift */; };
-		89F41A73294A38EA00A7BED8 /* CreditScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A72294A38EA00A7BED8 /* CreditScoreView.swift */; };
 		89F41A75294A390C00A7BED8 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A74294A390C00A7BED8 /* SectionView.swift */; };
 		89F41A77294A394E00A7BED8 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A76294A394E00A7BED8 /* SignupView.swift */; };
 		89F41A79294A396E00A7BED8 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A78294A396E00A7BED8 /* SigninView.swift */; };
 		89F41A7B294A39C400A7BED8 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A7A294A39C400A7BED8 /* FeaturedItem.swift */; };
 		89F41A7D294A39F100A7BED8 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A7C294A39F100A7BED8 /* CourseItem.swift */; };
-		89F41A7F294A3A2A00A7BED8 /* CreditScoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A7E294A3A2A00A7BED8 /* CreditScoreInfo.swift */; };
 		89F41A81294A3A5D00A7BED8 /* AngularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A80294A3A5D00A7BED8 /* AngularButton.swift */; };
 		89F41A83294A3A8D00A7BED8 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A82294A3A8D00A7BED8 /* CloseButton.swift */; };
 		89F41A85294A3AF500A7BED8 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A84294A3AF500A7BED8 /* Course.swift */; };
@@ -70,13 +68,11 @@
 		89F41A6A294A37EB00A7BED8 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		89F41A6C294A381B00A7BED8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		89F41A70294A38C500A7BED8 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
-		89F41A72294A38EA00A7BED8 /* CreditScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreView.swift; sourceTree = "<group>"; };
 		89F41A74294A390C00A7BED8 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		89F41A76294A394E00A7BED8 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		89F41A78294A396E00A7BED8 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		89F41A7A294A39C400A7BED8 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		89F41A7C294A39F100A7BED8 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
-		89F41A7E294A3A2A00A7BED8 /* CreditScoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreInfo.swift; sourceTree = "<group>"; };
 		89F41A80294A3A5D00A7BED8 /* AngularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButton.swift; sourceTree = "<group>"; };
 		89F41A82294A3A8D00A7BED8 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		89F41A84294A3AF500A7BED8 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -197,8 +193,6 @@
 				89F41A70294A38C500A7BED8 /* CourseView.swift */,
 				89F41A7A294A39C400A7BED8 /* FeaturedItem.swift */,
 				89F41A7C294A39F100A7BED8 /* CourseItem.swift */,
-				89F41A7E294A3A2A00A7BED8 /* CreditScoreInfo.swift */,
-				89F41A72294A38EA00A7BED8 /* CreditScoreView.swift */,
 				89F41A74294A390C00A7BED8 /* SectionView.swift */,
 				89F41A90294A3C2400A7BED8 /* SmallCourseItem.swift */,
 			);
@@ -290,7 +284,6 @@
 			files = (
 				89F41A85294A3AF500A7BED8 /* Course.swift in Sources */,
 				89F41A77294A394E00A7BED8 /* SignupView.swift in Sources */,
-				89F41A7F294A3A2A00A7BED8 /* CreditScoreInfo.swift in Sources */,
 				89F41A61294A366500A7BED8 /* ModalView.swift in Sources */,
 				89F41A79294A396E00A7BED8 /* SigninView.swift in Sources */,
 				89F41A81294A3A5D00A7BED8 /* AngularButton.swift in Sources */,
@@ -308,7 +301,6 @@
 				89F41A95294A429400A7BED8 /* QuizView.swift in Sources */,
 				89F41A9F294A4E3700A7BED8 /* QuizText.swift in Sources */,
 				89F41A41294A2ADA00A7BED8 /* side_project_chloeApp.swift in Sources */,
-				89F41A73294A38EA00A7BED8 /* CreditScoreView.swift in Sources */,
 				89F41A7B294A39C400A7BED8 /* FeaturedItem.swift in Sources */,
 				89F41A97294A45FF00A7BED8 /* QuizModel.swift in Sources */,
 				89F41A71294A38C500A7BED8 /* CourseView.swift in Sources */,

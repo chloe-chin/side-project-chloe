@@ -1,10 +1,3 @@
-//
-//  CloseButton.swift
-//  side-project-chloe
-//
-//  Created by chloe chin on 12/14/22.
-//
-
 import SwiftUI
 
 struct CloseButton: View {

@@ -111,30 +111,18 @@ struct CourseView: View {
                         .foregroundColor(.primary)
                         .matchedGeometryEffect(id: "title\(course.index)", in: namespace)
                     
-                    Text("8 videos - 12 hours".uppercased())
+                    Text(course.subtitle.uppercased())
                         .font(.footnote).bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .foregroundColor(.primary.opacity(0.7))
                         .matchedGeometryEffect(id: "subtitle\(course.index)", in: namespace)
                     
-                    Text("A complete guide to designing for iOS 14 with videos, examples and design...")
+                    Text(course.text)
                         .font(.footnote)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .foregroundColor(.primary.opacity(0.7))
                         .matchedGeometryEffect(id: "description\(course.index)", in: namespace)
-                    
-                    Divider()
-                        .foregroundColor(.secondary)
-                        .opacity(appear[1] ? 1 : 0)
-                    
-                    HStack {
-//                        LogoView(image: "Avatar 1")
-                        Text("Taught by Meng To and Stephanie Diep")
-                            .font(.footnote.weight(.medium))
-                            .foregroundStyle(.secondary)
-                    }
-                    .opacity(appear[1] ? 1 : 0)
-                    .accessibilityElement(children: .combine)
+                
                 }
                 .padding(20)
                 .padding(.vertical, 10)
@@ -164,15 +152,7 @@ struct CourseView: View {
     
     var sectionsSection: some View {
         VStack(spacing: 16) {
-//            ForEach(Array(courseSections.enumerated()), id: \.offset) { index, section in
-//                if index != 0 { Divider() }
-////                SectionRow(section: section)
-//                    .onTapGesture {
-//                        showSection.toggle()
-//                        selectedSection = section
-//                    }
-//                    .accessibilityElement(children: .combine)
-//            }
+            Text(course.longtext)
         }
         .padding(20)
         .background(.ultraThinMaterial)
