@@ -4,10 +4,6 @@ struct SignupView: View {
     @EnvironmentObject var model: Model
     @State var text = ""
     @State var password = ""
-//    @State var circleInitialY = CGFloat.zero
-//    @State var circleY = CGFloat.zero
-//    @FocusState var isEmailFocused: Bool
-//    @FocusState var isPasswordFocused: Bool
     @State var appear = [false, false, false]
     var dismissModal: () -> Void
     @AppStorage("isLogged") var isLogged = false
@@ -25,14 +21,6 @@ struct SignupView: View {
         .background(.regularMaterial)
         .backgroundColor(opacity: 0.4)
         .cornerRadius(30)
-//        .background(
-//            VStack {
-////                Circle().fill(.blue).frame(width: 88, height: 88)
-////                    .offset(x: 0, y: circleY)
-////                    .scaleEffect(appear[0] ? 1 : 0.1)
-//            }
-//                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-//        )
         .modifier(OutlineModifier(cornerRadius: 30))
         .onAppear { animate() }
         .background(Image("Background 4"))
@@ -46,56 +34,16 @@ struct SignupView: View {
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
                 .customField(icon: "envelope.open.fill")
-//                .overlay(
-//                    GeometryReader { proxy in
-//                        let offset = proxy.frame(in: .named("stack")).minY + 22
-//                        Color.clear.preference(key: CirclePreferenceKey.self, value: offset)
-//                    }
-//                        .onPreferenceChange(CirclePreferenceKey.self) { value in
-//                            circleInitialY = value
-//                            circleY = value
-//                        }
-//                )
-//                .focused($isEmailFocused)
-//                .onChange(of: isEmailFocused) { isEmailFocused in
-//                    if isEmailFocused {
-//                        withAnimation {
-//                            circleY = circleInitialY
-//                        }
-//                    }
-//                }
             
             SecureField("Password", text: $password)
                 .textContentType(.password)
                 .customField(icon: "key.fill")
-//            SecureField("", text: $password)
-//                .textContentType(.password)
-//                .placeholder(when: password.isEmpty) {
-//                    Text("Password")
-//                        .foregroundColor(.primary)
-////                        .blendMode(.overlay)
-//                }
-//                .customField(icon: "key.fill")
-//                .focused($isPasswordFocused)
-//                .onChange(of: isPasswordFocused) { isPasswordFocused in
-//                    if isPasswordFocused {
-//                        withAnimation {
-//                            circleY = circleInitialY + 70
-//                        }
-//                    }
-//                }
-            
             Button {
                 dismissModal()
                 isLogged = true
             } label: {
                 AngularButton(title: "Create Account")
             }
-            
-//            Text("By clicking on Sign up, you agree to our **[Terms of service](https://designcode.io)** and **Privacy policy**.")
-//                .font(.footnote)
-//                .foregroundColor(.primary.opacity(0.7))
-//                .accentColor(.primary.opacity(0.7))
             
             Divider()
             

@@ -99,7 +99,23 @@ struct StatisticsGraphView: View{
                         .font(.callout)
                         .fontWeight(.semibold)
                         .opacity(0.7)
+                    
                 }
+            }
+            if (convertExpensesToPrice(expenses: graph.expenses,type: "Income") > convertExpensesToPrice(expenses: graph.expenses,type: "Expenses")) {
+                Text("Congrats! Your income was higher than your expenses this month!")
+                    .font(.callout)
+                    .foregroundColor(.green)
+                    .fontWeight(.semibold)
+                    .opacity(0.7)
+            }
+            
+            if (convertExpensesToPrice(expenses: graph.expenses,type: "Income") < convertExpensesToPrice(expenses: graph.expenses,type: "Expenses")) {
+                Text("Oops! Your expenses were higher than your income this month. Head to the transactions tab to take a look at your spending.")
+                    .font(.callout)
+                    .foregroundColor(.red)
+                    .fontWeight(.semibold)
+                    .opacity(0.7)
             }
             
         }

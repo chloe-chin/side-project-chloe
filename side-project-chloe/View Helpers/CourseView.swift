@@ -8,8 +8,7 @@ struct CourseView: View {
     @State var viewState: CGSize = .zero
     @State var showSection = false
     @State var appear = [false, false, false]
-    @State var selectedSection = courseSections[0]
-    
+
     @EnvironmentObject var model: Model
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.presentationMode) var presentationMode
@@ -46,13 +45,6 @@ struct CourseView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
             .padding(20)
             .ignoresSafeArea()
-            
-//            LogoView(image: course.logo)
-//                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-//                .padding(20)
-//                .matchedGeometryEffect(id: "logo\(course.index)", in: namespace)
-//                .ignoresSafeArea()
-//                .accessibility(hidden: true)
         }
         .zIndex(1)
         .onAppear { fadeIn() }
@@ -94,15 +86,6 @@ struct CourseView: View {
                     .matchedGeometryEffect(id: "mask\(course.index)", in: namespace)
                     .offset(y: scrollY > 0 ? -scrollY : 0)
             )
-//            .overlay(
-//                Image(horizontalSizeClass == .compact ? "Waves 1" : "Waves 2")
-//                    .frame(maxHeight: .infinity, alignment: .bottom)
-//                    .offset(y: scrollY > 0 ? -scrollY : 0)
-//                    .scaleEffect(scrollY > 0 ? scrollY / 500 + 1 : 1)
-//                    .opacity(1)
-//                    .matchedGeometryEffect(id: "waves\(course.index)", in: namespace)
-//                    .accessibility(hidden: true)
-//            )
             .overlay(
                 VStack(alignment: .leading, spacing: 16) {
                     Text(course.title)
@@ -159,9 +142,6 @@ struct CourseView: View {
         .backgroundStyle(cornerRadius: 30)
         .padding(20)
         .padding(.vertical, 80)
-        .sheet(isPresented: $showSection) {
-            SectionView(section: $selectedSection)
-        }
     }
     
     func close() {

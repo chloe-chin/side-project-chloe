@@ -20,7 +20,6 @@
 		8934A35A294AC0F7008CEACA /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A359294AC0F7008CEACA /* ExpenseViewModel.swift */; };
 		8934A35C294AC11B008CEACA /* LockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A35B294AC11B008CEACA /* LockViewModel.swift */; };
 		8934A362294ACC74008CEACA /* MyExpenses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8934A360294ACC74008CEACA /* MyExpenses.xcdatamodeld */; };
-		8942FCE8294ADC0400BD08C9 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8942FCE7294ADC0400BD08C9 /* Notifications.swift */; };
 		8947FE53294AA2A4003F8A0C /* QuizzesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8947FE52294AA2A4003F8A0C /* QuizzesView.swift */; };
 		8947FE55294AA3E7003F8A0C /* QuizItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8947FE54294AA3E7003F8A0C /* QuizItem.swift */; };
 		89F41A41294A2ADA00A7BED8 /* side_project_chloeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A40294A2ADA00A7BED8 /* side_project_chloeApp.swift */; };
@@ -37,7 +36,6 @@
 		89F41A5F294A349900A7BED8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A5E294A349900A7BED8 /* AccountView.swift */; };
 		89F41A61294A366500A7BED8 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A60294A366500A7BED8 /* ModalView.swift */; };
 		89F41A67294A375900A7BED8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A66294A375900A7BED8 /* HomeView.swift */; };
-		89F41A6B294A37EB00A7BED8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A6A294A37EB00A7BED8 /* NotificationsView.swift */; };
 		89F41A6D294A381B00A7BED8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A6C294A381B00A7BED8 /* ProfileView.swift */; };
 		89F41A71294A38C500A7BED8 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A70294A38C500A7BED8 /* CourseView.swift */; };
 		89F41A75294A390C00A7BED8 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A74294A390C00A7BED8 /* SectionView.swift */; };
@@ -54,7 +52,6 @@
 		89F41A8D294A3BB900A7BED8 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A8C294A3BB900A7BED8 /* TextModifier.swift */; };
 		89F41A8F294A3BD700A7BED8 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A8E294A3BD700A7BED8 /* ColorExtension.swift */; };
 		89F41A91294A3C2400A7BED8 /* SmallCourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A90294A3C2400A7BED8 /* SmallCourseItem.swift */; };
-		89F41A93294A3C5600A7BED8 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A92294A3C5600A7BED8 /* CourseSection.swift */; };
 		89F41A95294A429400A7BED8 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A94294A429400A7BED8 /* QuizView.swift */; };
 		89F41A97294A45FF00A7BED8 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A96294A45FF00A7BED8 /* QuizModel.swift */; };
 		89F41A99294A464B00A7BED8 /* QuizGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A98294A464B00A7BED8 /* QuizGame.swift */; };
@@ -77,7 +74,6 @@
 		8934A359294AC0F7008CEACA /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
 		8934A35B294AC11B008CEACA /* LockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewModel.swift; sourceTree = "<group>"; };
 		8934A361294ACC74008CEACA /* MyExpenses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyExpenses.xcdatamodel; sourceTree = "<group>"; };
-		8942FCE7294ADC0400BD08C9 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		8947FE52294AA2A4003F8A0C /* QuizzesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesView.swift; sourceTree = "<group>"; };
 		8947FE54294AA3E7003F8A0C /* QuizItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizItem.swift; sourceTree = "<group>"; };
 		89F41A3D294A2ADA00A7BED8 /* side-project-chloe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "side-project-chloe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +91,6 @@
 		89F41A5E294A349900A7BED8 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		89F41A60294A366500A7BED8 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		89F41A66294A375900A7BED8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		89F41A6A294A37EB00A7BED8 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		89F41A6C294A381B00A7BED8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		89F41A70294A38C500A7BED8 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		89F41A74294A390C00A7BED8 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
@@ -112,7 +107,6 @@
 		89F41A8C294A3BB900A7BED8 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
 		89F41A8E294A3BD700A7BED8 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		89F41A90294A3C2400A7BED8 /* SmallCourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCourseItem.swift; sourceTree = "<group>"; };
-		89F41A92294A3C5600A7BED8 /* CourseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
 		89F41A94294A429400A7BED8 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		89F41A96294A45FF00A7BED8 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		89F41A98294A464B00A7BED8 /* QuizGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGame.swift; sourceTree = "<group>"; };
@@ -145,7 +139,6 @@
 				8934A35B294AC11B008CEACA /* LockViewModel.swift */,
 				8934A351294ABF0E008CEACA /* FilterableTransactionView.swift */,
 				8934A353294ABF2A008CEACA /* HistoryView.swift */,
-				8942FCE7294ADC0400BD08C9 /* Notifications.swift */,
 				8934A355294ABFB5008CEACA /* MainView.swift */,
 				8934A357294AC00C008CEACA /* Persistence.swift */,
 			);
@@ -199,7 +192,6 @@
 				89F41A5C294A346400A7BED8 /* TabBar.swift */,
 				89F41A54294A30BE00A7BED8 /* NavigationBar.swift */,
 				89F41A42294A2ADA00A7BED8 /* ContentView.swift */,
-				89F41A6A294A37EB00A7BED8 /* NotificationsView.swift */,
 				89F41A66294A375900A7BED8 /* HomeView.swift */,
 				8947FE52294AA2A4003F8A0C /* QuizzesView.swift */,
 				89F41A6C294A381B00A7BED8 /* ProfileView.swift */,
@@ -234,7 +226,6 @@
 				89F41A58294A31EB00A7BED8 /* Avatar.swift */,
 				89F41A56294A317F00A7BED8 /* AnimatableFontModifier.swift */,
 				89F41A5A294A324E00A7BED8 /* Modifiers.swift */,
-				89F41A92294A3C5600A7BED8 /* CourseSection.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -379,12 +370,9 @@
 				8947FE53294AA2A4003F8A0C /* QuizzesView.swift in Sources */,
 				89F41A67294A375900A7BED8 /* HomeView.swift in Sources */,
 				8934A362294ACC74008CEACA /* MyExpenses.xcdatamodeld in Sources */,
-				8942FCE8294ADC0400BD08C9 /* Notifications.swift in Sources */,
 				8934A35C294AC11B008CEACA /* LockViewModel.swift in Sources */,
 				89F41A53294A2F9E00A7BED8 /* Tab.swift in Sources */,
-				89F41A93294A3C5600A7BED8 /* CourseSection.swift in Sources */,
 				89F41A57294A317F00A7BED8 /* AnimatableFontModifier.swift in Sources */,
-				89F41A6B294A37EB00A7BED8 /* NotificationsView.swift in Sources */,
 				89F41A7D294A39F100A7BED8 /* CourseItem.swift in Sources */,
 				89F41A8B294A3B9700A7BED8 /* CustomFieldModifier.swift in Sources */,
 			);

@@ -59,13 +59,6 @@ struct CourseItem: View {
             RoundedRectangle(cornerRadius: 30)
                 .matchedGeometryEffect(id: "mask\(course.index)", in: namespace)
         )
-//        .overlay(
-//            Image(horizontalSizeClass == .compact ? "Waves 1" : "Waves 2")
-//                .frame(maxHeight: .infinity, alignment: .bottom)
-//                .offset(y: 0)
-//                .opacity(0)
-//                .matchedGeometryEffect(id: "waves\(course.index)", in: namespace)
-//        )
         .onTapGesture {
             withAnimation(.openCard) {
                 model.showDetail = true

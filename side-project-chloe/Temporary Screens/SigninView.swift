@@ -4,8 +4,6 @@ struct SigninView: View {
     @EnvironmentObject var model: Model
     @State var text = ""
     @State var password = ""
-//    @State var circleInitialY = CGFloat.zero
-//    @State var circleY = CGFloat.zero
     @FocusState var isEmailFocused: Bool
     @FocusState var isPasswordFocused: Bool
     @State var appear = [false, false, false]
@@ -15,13 +13,7 @@ struct SigninView: View {
         VStack(alignment: .leading, spacing: 20) {
             Text("Sign in")
                 .font(.largeTitle).bold()
-//                .blendMode(.overlay)
                 .slideFadeIn(show: appear[0], offset: 30)
-            
-//            Text("Access 120+ hours of courses, tutorials and livestreams")
-//                .font(.headline)
-//                .foregroundStyle(.secondary)
-//                .slideFadeIn(show: appear[1], offset: 20)
             
             form.slideFadeIn(show: appear[2], offset: 10)
         }
@@ -31,14 +23,6 @@ struct SigninView: View {
         .background(.regularMaterial)
         .backgroundColor(opacity: 0.4)
         .cornerRadius(30)
-//        .background(
-//            VStack {
-//                Circle().fill(.blue).frame(width: 68, height: 68)
-//                    .offset(x: 0, y: circleY)
-//                    .scaleEffect(appear[0] ? 1 : 0.1)
-//            }
-//                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-//        )
         .modifier(OutlineModifier(cornerRadius: 30))
         .onAppear { animate() }
         .background(Image("Background 4"))
@@ -52,36 +36,9 @@ struct SigninView: View {
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
                 .customField(icon: "envelope.open.fill")
-//                .overlay(
-//                    GeometryReader { proxy in
-//                        let offset = proxy.frame(in: .named("stack")).minY + 32
-//                        Color.clear.preference(key: CirclePreferenceKey.self, value: offset)
-//                    }
-//                    .onPreferenceChange(CirclePreferenceKey.self) { value in
-//                        circleInitialY = value
-//                        circleY = value
-//                    }
-//                )
-//                .focused($isEmailFocused)
-//                .onChange(of: isEmailFocused) { isEmailFocused in
-//                    if isEmailFocused {
-//                        withAnimation {
-//                            circleY = circleInitialY
-//                        }
-//                    }
-//                }
-            
             SecureField("Password", text: $password)
                 .textContentType(.password)
                 .customField(icon: "key.fill")
-//                .focused($isPasswordFocused)
-//                .onChange(of: isPasswordFocused, perform: { isPasswordFocused in
-//                    if isPasswordFocused {
-//                        withAnimation {
-//                            circleY = circleInitialY + 70
-//                        }
-//                    }
-//                })
             
             Button {
                 model.dismissModal.toggle()
