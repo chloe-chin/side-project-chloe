@@ -2,7 +2,6 @@ import SwiftUI
 
 struct QuizView: View {
     @ObservedObject var quizGame: QuizGame
-    @AppStorage("selectedTab") var selectedTab: Tab = .learn
 
     var body: some View {
         ZStack {
@@ -14,35 +13,6 @@ struct QuizView: View {
             if (quizGame.model.quizCompleted) {
                 QuizCompletedView(quizGame: quizGame)
             } else {
-            
-
-//                NavigationLink(
-//                    destination: HomeView(),
-//                    isActive: $goesToDetail) {
-//                    Button(action: { goesToDetail = true }) {
-//                        Image(systemName: "xmark")
-//                            .font(.system(size: 17, weight: .bold))
-//                            .foregroundColor(.secondary)
-//                            .padding(8)
-//                            .background(.regularMaterial, in: Circle())
-//                            .backgroundStyle(cornerRadius: 18)
-//                            .offset(x: 130.0, y: -360.0)
-//                    }
-//                    
-//                }
-                
-//                NavigationLink(destination: HomeView()) {
-//                    Button(action: {// empty action}) {
-//                        // Button design
-//                        Image(systemName: "xmark")
-//                            .font(.system(size: 17, weight: .bold))
-//                            .foregroundColor(.secondary)
-//                            .padding(8)
-//                            .background(.regularMaterial, in: Circle())
-//                            .backgroundStyle(cornerRadius: 18)
-//                            .offset(x: 130.0, y: -360.0)
-//                    }
-//                }
         
                 VStack(alignment: .center, spacing: 20) {
 

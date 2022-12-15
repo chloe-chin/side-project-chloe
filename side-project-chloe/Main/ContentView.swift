@@ -16,8 +16,8 @@ struct ContentView: View {
                 case .home:
                     HomeView()
                 case .learn:
-                    LearnView()
-//                    QuizView(quizGame: QuizGame())
+//                    LearnView()
+                    QuizView(quizGame: QuizGame())
                 case .notifications:
                     NotificationsView()
                 case .profile:

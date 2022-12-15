@@ -12,7 +12,7 @@ class QuizGame : ObservableObject {
     
     
     var timer = Timer()
-    var maxProgress = 15
+    var maxProgress = 50
     @Published var progress = 0
     
     init() {
@@ -81,19 +81,41 @@ extension QuizGame {
                                     QuizOption(id: 13,optionId: "C", option: "6", color: Color.teal),
                                     QuizOption(id: 14,optionId: "D", option: "7", color: Color.teal)]),
             
-            QuizModel(question: "Which two categories have the highest impact on your credit score?",
+            QuizModel(question: "What is the highest credit score you can have?",
                       answer: "C",
-                      optionsList: [QuizOption(id: 21,optionId: "A", option: "Sea Lion", color: Color.teal),
-                                    QuizOption(id: 22,optionId: "B", option: "Sea Urchin", color: Color.teal),
-                                    QuizOption(id: 23,optionId: "C", option: "Seahorse", color: Color.teal),
-                                    QuizOption(id: 24,optionId: "D", option: "Sea slug", color: Color.teal)]),
+                      optionsList: [QuizOption(id: 21,optionId: "A", option: "1000", color: Color.teal),
+                                    QuizOption(id: 22,optionId: "B", option: "750", color: Color.teal),
+                                    QuizOption(id: 23,optionId: "C", option: "850", color: Color.teal),
+                                    QuizOption(id: 24,optionId: "D", option: "800", color: Color.teal)]),
             
-            QuizModel(question: "Which is the world largest living fish?",
+            QuizModel(question: "Which is not one of the 4 budgets?",
+                      answer: "A",
+                      optionsList: [QuizOption(id: 31,optionId: "A", option: "100/0", color: Color.teal),
+                                    QuizOption(id: 32,optionId: "B", option: "80/20", color: Color.teal),
+                                    QuizOption(id: 33,optionId: "C", option: "50/30/20", color: Color.teal),
+                                    QuizOption(id: 34,optionId: "D", option: "0-Based", color: Color.teal)]),
+            
+            QuizModel(question: "How many months of income is a recommeded emergency fund?",
                       answer: "B",
-                      optionsList: [QuizOption(id: 31,optionId: "A", option: "Manta Ray", color: Color.teal),
-                                    QuizOption(id: 32,optionId: "B", option: "Whale Shark", color: Color.teal),
-                                    QuizOption(id: 33,optionId: "C", option: "Marlin", color: Color.teal),
-                                    QuizOption(id: 34,optionId: "D", option: "Sailfish", color: Color.teal)])
+                      optionsList: [QuizOption(id: 31,optionId: "A", option: "12 months", color: Color.teal),
+                                    QuizOption(id: 32,optionId: "B", option: "3-6 months", color: Color.teal),
+                                    QuizOption(id: 33,optionId: "C", option: "1 month", color: Color.teal),
+                                    QuizOption(id: 34,optionId: "D", option: "1-4 months", color: Color.teal)]),
+            
+            QuizModel(question: "Should you create a savings before you pay off your debts?",
+                      answer: "D",
+                      optionsList: [QuizOption(id: 31,optionId: "A", option: "Depends", color: Color.teal),
+                                    QuizOption(id: 32,optionId: "B", option: "Of Course", color: Color.teal),
+                                    QuizOption(id: 33,optionId: "C", option: "Not Sure", color: Color.teal),
+                                    QuizOption(id: 34,optionId: "D", option: "No", color: Color.teal)]),
+            
+            QuizModel(question: "How much should your debt-to-credit percentage be?",
+                      answer: "B",
+                      optionsList: [QuizOption(id: 31,optionId: "A", option: "100%", color: Color.teal),
+                                    QuizOption(id: 32,optionId: "B", option: "30%", color: Color.teal),
+                                    QuizOption(id: 33,optionId: "C", option: "40%", color: Color.teal),
+                                    QuizOption(id: 34,optionId: "D", option: "70%", color: Color.teal)])
+            
         ]
     }
 }
