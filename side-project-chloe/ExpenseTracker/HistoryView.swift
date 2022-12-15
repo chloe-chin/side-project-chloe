@@ -103,7 +103,7 @@ struct StatisticsGraphView: View{
                 }
             }
             if (convertExpensesToPrice(expenses: graph.expenses,type: "Income") > convertExpensesToPrice(expenses: graph.expenses,type: "Expenses")) {
-                Text("Congrats! Your income was higher than your expenses this month!")
+                Text("Congrats! Your income was higher than your expenses this month!\n\nVisit the Savings Learning Module on the Home page to see how to create an Emergency Fund and grow your savings!")
                     .font(.callout)
                     .foregroundColor(.green)
                     .fontWeight(.semibold)
@@ -111,7 +111,7 @@ struct StatisticsGraphView: View{
             }
             
             if (convertExpensesToPrice(expenses: graph.expenses,type: "Income") < convertExpensesToPrice(expenses: graph.expenses,type: "Expenses")) {
-                Text("Oops! Your expenses were higher than your income this month. Head to the transactions tab to take a look at your spending.")
+                Text("Oops! Your expenses were higher than your income this month.\n\nVisit the Budgeting Learning Module on the Home page to learn how to improve for next month!")
                     .font(.callout)
                     .foregroundColor(.red)
                     .fontWeight(.semibold)

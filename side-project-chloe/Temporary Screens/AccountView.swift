@@ -4,6 +4,7 @@ struct AccountView: View {
     @State var isPinned = false
     @State var isDeleted = false
     
+    
     @Environment(\.presentationMode) var presentationMode
     @AppStorage("isLogged") var isLogged = false
     

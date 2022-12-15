@@ -31,7 +31,7 @@ class QuizGame : ObservableObject {
                 model.quizModel.optionsList[index].isSelected = true
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    if (QuizGame.currentIndex < 5) {
+                    if (QuizGame.currentIndex < 7) {
                         QuizGame.currentIndex = QuizGame.currentIndex + 1
                         self.model = QuizGame.createGameModel(i: QuizGame.currentIndex)
                     } else {
@@ -88,6 +88,13 @@ extension QuizGame {
                                     QuizOption(id: 23,optionId: "C", option: "850", color: Color.teal),
                                     QuizOption(id: 24,optionId: "D", option: "800", color: Color.teal)]),
             
+            QuizModel(question: "Which debt is the easiest to accrue because of interest rates?",
+                      answer: "A",
+                      optionsList: [QuizOption(id: 31,optionId: "A", option: "Credit Card", color: Color.teal),
+                                    QuizOption(id: 32,optionId: "B", option: "Mortgage", color: Color.teal),
+                                    QuizOption(id: 33,optionId: "C", option: "Car", color: Color.teal),
+                                    QuizOption(id: 34,optionId: "D", option: "Personal Loan", color: Color.teal)]),
+            
             QuizModel(question: "Which is not one of the 4 budgets?",
                       answer: "A",
                       optionsList: [QuizOption(id: 31,optionId: "A", option: "100/0", color: Color.teal),
@@ -114,7 +121,16 @@ extension QuizGame {
                       optionsList: [QuizOption(id: 31,optionId: "A", option: "100%", color: Color.teal),
                                     QuizOption(id: 32,optionId: "B", option: "30%", color: Color.teal),
                                     QuizOption(id: 33,optionId: "C", option: "40%", color: Color.teal),
-                                    QuizOption(id: 34,optionId: "D", option: "70%", color: Color.teal)])
+                                    QuizOption(id: 34,optionId: "D", option: "70%", color: Color.teal)]),
+            
+            QuizModel(question: "What is the average credit card interest?",
+                      answer: "C",
+                      optionsList: [QuizOption(id: 31,optionId: "A", option: "25%", color: Color.teal),
+                                    QuizOption(id: 32,optionId: "B", option: "5%", color: Color.teal),
+                                    QuizOption(id: 33,optionId: "C", option: "16%", color: Color.teal),
+                                    QuizOption(id: 34,optionId: "D", option: "3%", color: Color.teal)])
+            
+        
             
         ]
     }

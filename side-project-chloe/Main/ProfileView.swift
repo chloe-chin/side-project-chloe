@@ -36,7 +36,7 @@ struct ProfileView: View {
     
     var form: some View {
         Group {
-            VStack {
+            VStack{
                 TextField("credit score", text: $creditscore)
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
@@ -74,8 +74,8 @@ struct ProfileView: View {
                 .foregroundColor(Color.gray)
                 
                 
-                Button {
-                    dismiss()
+                Button (){
+                    
                 } label: {
                     AngularButton(title: "Done")
                 }
