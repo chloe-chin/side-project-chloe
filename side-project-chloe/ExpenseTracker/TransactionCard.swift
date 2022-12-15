@@ -26,7 +26,7 @@ struct TransactionCardView: View{
                 Text(currenyString)
                     .font(.callout)
                     .opacity(0.7)
-                    .foregroundColor(expense.type == "Expenses" ? Color("Red") : Color("Green"))
+                    .foregroundColor(expense.type == "Expenses" ? Color.red : Color.green)
                 Text((expense.date ?? Date()).formatted(date: .numeric, time: .omitted))
                     .font(.caption)
                     .opacity(0.5)
@@ -46,7 +46,8 @@ struct TransactionCardView: View{
 
 struct TransactionCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
+            .environmentObject(Model())
     }
 }
 

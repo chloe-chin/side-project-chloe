@@ -184,7 +184,8 @@ struct FilterableTransactionView: View{
 
 struct FilterableTransactionView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
+            .environmentObject(Model())
     }
 }
 

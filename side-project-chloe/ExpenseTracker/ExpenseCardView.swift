@@ -31,12 +31,12 @@ struct ExpenseCard: View{
                 HStack(spacing: 15){
                     Image(systemName: "arrow.down")
                         .font(.caption.bold())
-                        .foregroundColor(Color("Green"))
+                        .foregroundColor(Color.green)
                         .frame(width: 30, height: 30)
                         .background(Color.white.opacity(0.7),in: Circle())
                     
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Income")
+                        Text("INCOME")
                             .font(.caption)
                             .opacity(0.7)
                         Text(expenseViewModel.convertExpensesToPrice(expenses: expenses,type: "Income"))
@@ -49,12 +49,12 @@ struct ExpenseCard: View{
                     
                     Image(systemName: "arrow.up")
                         .font(.caption.bold())
-                        .foregroundColor(Color("Red"))
+                        .foregroundColor(Color.red)
                         .frame(width: 30, height: 30)
                         .background(Color.white.opacity(0.7),in: Circle())
                     
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Expenses")
+                        Text("EXPENSES")
                             .font(.caption)
                             .opacity(0.7)
                         Text(expenseViewModel.convertExpensesToPrice(expenses: expenses,type: "Expenses"))
@@ -78,6 +78,7 @@ struct ExpenseCard: View{
 }
 struct ExpenseCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
+            .environmentObject(Model())
     }
 }

@@ -151,6 +151,6 @@ struct StatisticsGraphView: View{
 }
 struct StatisticsGraphView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StatisticsGraphView()
     }
 }
