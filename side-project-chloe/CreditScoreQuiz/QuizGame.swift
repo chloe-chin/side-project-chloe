@@ -31,7 +31,7 @@ class QuizGame : ObservableObject {
                 model.quizModel.optionsList[index].isSelected = true
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    if (QuizGame.currentIndex < 2) {
+                    if (QuizGame.currentIndex < 5) {
                         QuizGame.currentIndex = QuizGame.currentIndex + 1
                         self.model = QuizGame.createGameModel(i: QuizGame.currentIndex)
                     } else {

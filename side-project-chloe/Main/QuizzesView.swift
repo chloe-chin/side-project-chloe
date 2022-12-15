@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeView: View {
+struct QuizzesView: View {
     var columns = [GridItem(.adaptive(minimum: 300), spacing: 20)]
     
     @State var show = false
@@ -16,44 +16,19 @@ struct HomeView: View {
         ZStack {
             Color("Background").ignoresSafeArea()
             
-            if model.showDetail {
-                detail
-            }
-            
             ScrollView {
                 scrollDetection
                 
                 Rectangle()
-                    .frame(width: 100, height: 72)
+                    .frame(width: 100, height: 50)
                     .opacity(0)
                 
                 featured
                 
-                Text("learning modules".uppercased())
+                Text("more quizzes coming soon!".uppercased())
                     .sectionTitleModifier()
                     .offset(y: -80)
                     .accessibilityAddTraits(.isHeader)
-                
-                if model.showDetail {
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(courses) { course in
-                            Rectangle()
-                                .fill(.white)
-                                .frame(height: 300)
-                                .cornerRadius(30)
-                                .shadow(color: Color("Shadow").opacity(0.2), radius: 20, x: 0, y: 10)
-                                .opacity(0.3)
-                        }
-                    }
-                    .padding(.horizontal, 20)
-                    .offset(y: -80)
-                } else {
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        course.frame(height: 300)
-                    }
-                    .padding(.horizontal, 20)
-                    .offset(y: -80)
-                }
             }
             .coordinateSpace(name: "scroll")
         }
@@ -64,46 +39,30 @@ struct HomeView: View {
                 showStatusBar.toggle()
             }
         }
-        .overlay(NavigationBar(title: "Welcome to Common Cents", contentHasScrolled: $contentHasScrolled))
+        .overlay(NavigationBar(title: "Quizzes", contentHasScrolled: $contentHasScrolled))
         .statusBar(hidden: !showStatusBar)
-    }
-    
-    var detail: some View {
-        ForEach(featuredCourses) { course in
-            if course.index == model.selectedCourse {
-                CourseView(namespace: namespace, course: .constant(course))
-            }
-        }
-    }
-    
-    var course: some View {
-        ForEach(featuredCourses) { course in
-            CourseItem(namespace: namespace, course: course)
-        }
-        
     }
     
     var featured: some View {
         TabView {
             GeometryReader { proxy in
-                FeaturedItem()
+                QuizItem()
                     .cornerRadius(30)
                     .modifier(OutlineModifier(cornerRadius: 30))
                     .shadow(color: Color("Shadow").opacity(0.3),
                             radius: 30, x: 0, y: 30)
                     .blur(radius: abs(proxy.frame(in: .global).minX) / 40)
                     .overlay(
-                        Image("Illustration 18")
+                        Image("Illustration 12")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .offset(x: 32, y: -55)
+                            .offset(x: 60, y: -90)
                             .frame(height: 230)
                             .offset(x: proxy.frame(in: .global).minX / 2)
                     )
                     .padding(20)
                     .onTapGesture {
                         showCourse = true
-//                      selectedCourse = course
                     }
                         
                 }
@@ -115,8 +74,7 @@ struct HomeView: View {
             
         )
         .sheet(isPresented: $showCourse) {
-            // show expense tracker
-            MainView()
+            QuizView(quizGame: QuizGame())
         }
     }
     
@@ -137,10 +95,11 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct Quizzes_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        QuizzesView()
             .environmentObject(Model())
     }
 }
+
 

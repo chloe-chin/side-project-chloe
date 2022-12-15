@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8934A345294ABDBE008CEACA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A344294ABDBE008CEACA /* Extensions.swift */; };
+		8934A347294ABDE8008CEACA /* StatisticsGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A346294ABDE8008CEACA /* StatisticsGraph.swift */; };
+		8934A34A294ABE31008CEACA /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A349294ABE31008CEACA /* DynamicFilteredView.swift */; };
+		8934A34C294ABE5A008CEACA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A34B294ABE5A008CEACA /* Home.swift */; };
+		8934A34E294ABE7C008CEACA /* ExpenseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A34D294ABE7C008CEACA /* ExpenseCardView.swift */; };
+		8934A350294ABEE7008CEACA /* TransactionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A34F294ABEE7008CEACA /* TransactionCard.swift */; };
+		8934A352294ABF0E008CEACA /* FilterableTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A351294ABF0E008CEACA /* FilterableTransactionView.swift */; };
+		8934A354294ABF2A008CEACA /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A353294ABF2A008CEACA /* HistoryView.swift */; };
+		8934A356294ABFB5008CEACA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A355294ABFB5008CEACA /* MainView.swift */; };
+		8934A358294AC00C008CEACA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A357294AC00C008CEACA /* Persistence.swift */; };
+		8934A35A294AC0F7008CEACA /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A359294AC0F7008CEACA /* ExpenseViewModel.swift */; };
+		8934A35C294AC11B008CEACA /* LockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A35B294AC11B008CEACA /* LockViewModel.swift */; };
+		8934A362294ACC74008CEACA /* MyExpenses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8934A360294ACC74008CEACA /* MyExpenses.xcdatamodeld */; };
+		8947FE53294AA2A4003F8A0C /* QuizzesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8947FE52294AA2A4003F8A0C /* QuizzesView.swift */; };
+		8947FE55294AA3E7003F8A0C /* QuizItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8947FE54294AA3E7003F8A0C /* QuizItem.swift */; };
 		89F41A41294A2ADA00A7BED8 /* side_project_chloeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A40294A2ADA00A7BED8 /* side_project_chloeApp.swift */; };
 		89F41A43294A2ADA00A7BED8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41A42294A2ADA00A7BED8 /* ContentView.swift */; };
 		89F41A45294A2ADC00A7BED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F41A44294A2ADC00A7BED8 /* Assets.xcassets */; };
@@ -49,6 +64,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8934A344294ABDBE008CEACA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8934A346294ABDE8008CEACA /* StatisticsGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsGraph.swift; sourceTree = "<group>"; };
+		8934A349294ABE31008CEACA /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
+		8934A34B294ABE5A008CEACA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		8934A34D294ABE7C008CEACA /* ExpenseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCardView.swift; sourceTree = "<group>"; };
+		8934A34F294ABEE7008CEACA /* TransactionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCard.swift; sourceTree = "<group>"; };
+		8934A351294ABF0E008CEACA /* FilterableTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterableTransactionView.swift; sourceTree = "<group>"; };
+		8934A353294ABF2A008CEACA /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		8934A355294ABFB5008CEACA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8934A357294AC00C008CEACA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		8934A359294AC0F7008CEACA /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
+		8934A35B294AC11B008CEACA /* LockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewModel.swift; sourceTree = "<group>"; };
+		8934A361294ACC74008CEACA /* MyExpenses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyExpenses.xcdatamodel; sourceTree = "<group>"; };
+		8947FE52294AA2A4003F8A0C /* QuizzesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesView.swift; sourceTree = "<group>"; };
+		8947FE54294AA3E7003F8A0C /* QuizItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizItem.swift; sourceTree = "<group>"; };
 		89F41A3D294A2ADA00A7BED8 /* side-project-chloe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "side-project-chloe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F41A40294A2ADA00A7BED8 /* side_project_chloeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = side_project_chloeApp.swift; sourceTree = "<group>"; };
 		89F41A42294A2ADA00A7BED8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +132,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8934A343294ABDA7008CEACA /* ExpenseTracker */ = {
+			isa = PBXGroup;
+			children = (
+				8934A344294ABDBE008CEACA /* Extensions.swift */,
+				8934A346294ABDE8008CEACA /* StatisticsGraph.swift */,
+				8934A349294ABE31008CEACA /* DynamicFilteredView.swift */,
+				8934A34B294ABE5A008CEACA /* Home.swift */,
+				8934A34D294ABE7C008CEACA /* ExpenseCardView.swift */,
+				8934A34F294ABEE7008CEACA /* TransactionCard.swift */,
+				8934A359294AC0F7008CEACA /* ExpenseViewModel.swift */,
+				8934A35B294AC11B008CEACA /* LockViewModel.swift */,
+				8934A351294ABF0E008CEACA /* FilterableTransactionView.swift */,
+				8934A353294ABF2A008CEACA /* HistoryView.swift */,
+				8934A355294ABFB5008CEACA /* MainView.swift */,
+				8934A357294AC00C008CEACA /* Persistence.swift */,
+			);
+			path = ExpenseTracker;
+			sourceTree = "<group>";
+		};
 		89F41A34294A2ADA00A7BED8 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				89F41A40294A2ADA00A7BED8 /* side_project_chloeApp.swift */,
+				8934A360294ACC74008CEACA /* MyExpenses.xcdatamodeld */,
+				8934A343294ABDA7008CEACA /* ExpenseTracker */,
 				89F41A62294A369800A7BED8 /* Main */,
 				89F41A6F294A38B300A7BED8 /* View Helpers */,
 				89F41A64294A36F700A7BED8 /* Temporary Screens */,
@@ -149,6 +200,7 @@
 				89F41A42294A2ADA00A7BED8 /* ContentView.swift */,
 				89F41A6A294A37EB00A7BED8 /* NotificationsView.swift */,
 				89F41A66294A375900A7BED8 /* HomeView.swift */,
+				8947FE52294AA2A4003F8A0C /* QuizzesView.swift */,
 				89F41A68294A378E00A7BED8 /* LearnView.swift */,
 				89F41A6C294A381B00A7BED8 /* ProfileView.swift */,
 			);
@@ -192,6 +244,7 @@
 			children = (
 				89F41A70294A38C500A7BED8 /* CourseView.swift */,
 				89F41A7A294A39C400A7BED8 /* FeaturedItem.swift */,
+				8947FE54294AA3E7003F8A0C /* QuizItem.swift */,
 				89F41A7C294A39F100A7BED8 /* CourseItem.swift */,
 				89F41A74294A390C00A7BED8 /* SectionView.swift */,
 				89F41A90294A3C2400A7BED8 /* SmallCourseItem.swift */,
@@ -283,11 +336,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				89F41A85294A3AF500A7BED8 /* Course.swift in Sources */,
+				8934A34E294ABE7C008CEACA /* ExpenseCardView.swift in Sources */,
 				89F41A77294A394E00A7BED8 /* SignupView.swift in Sources */,
 				89F41A61294A366500A7BED8 /* ModalView.swift in Sources */,
 				89F41A79294A396E00A7BED8 /* SigninView.swift in Sources */,
 				89F41A81294A3A5D00A7BED8 /* AngularButton.swift in Sources */,
 				89F41A89294A3B7000A7BED8 /* Animations.swift in Sources */,
+				8934A354294ABF2A008CEACA /* HistoryView.swift in Sources */,
+				8934A352294ABF0E008CEACA /* FilterableTransactionView.swift in Sources */,
 				89F41A5D294A346400A7BED8 /* TabBar.swift in Sources */,
 				89F41A75294A390C00A7BED8 /* SectionView.swift in Sources */,
 				89F41A91294A3C2400A7BED8 /* SmallCourseItem.swift in Sources */,
@@ -300,19 +356,31 @@
 				89F41A5F294A349900A7BED8 /* AccountView.swift in Sources */,
 				89F41A95294A429400A7BED8 /* QuizView.swift in Sources */,
 				89F41A9F294A4E3700A7BED8 /* QuizText.swift in Sources */,
+				8934A345294ABDBE008CEACA /* Extensions.swift in Sources */,
 				89F41A41294A2ADA00A7BED8 /* side_project_chloeApp.swift in Sources */,
 				89F41A7B294A39C400A7BED8 /* FeaturedItem.swift in Sources */,
 				89F41A97294A45FF00A7BED8 /* QuizModel.swift in Sources */,
 				89F41A71294A38C500A7BED8 /* CourseView.swift in Sources */,
+				8934A35A294AC0F7008CEACA /* ExpenseViewModel.swift in Sources */,
+				8934A356294ABFB5008CEACA /* MainView.swift in Sources */,
 				89F41A83294A3A8D00A7BED8 /* CloseButton.swift in Sources */,
 				89F41A6D294A381B00A7BED8 /* ProfileView.swift in Sources */,
 				89F41A87294A3B4800A7BED8 /* PreferenceKey.swift in Sources */,
 				89F41A9D294A4DEA00A7BED8 /* FinishedQuiz.swift in Sources */,
+				8934A358294AC00C008CEACA /* Persistence.swift in Sources */,
+				8934A347294ABDE8008CEACA /* StatisticsGraph.swift in Sources */,
+				8934A34A294ABE31008CEACA /* DynamicFilteredView.swift in Sources */,
+				8934A350294ABEE7008CEACA /* TransactionCard.swift in Sources */,
 				89F41A69294A378E00A7BED8 /* LearnView.swift in Sources */,
 				89F41A5B294A324E00A7BED8 /* Modifiers.swift in Sources */,
 				89F41A59294A31EB00A7BED8 /* Avatar.swift in Sources */,
+				8947FE55294AA3E7003F8A0C /* QuizItem.swift in Sources */,
+				8934A34C294ABE5A008CEACA /* Home.swift in Sources */,
 				89F41A8F294A3BD700A7BED8 /* ColorExtension.swift in Sources */,
+				8947FE53294AA2A4003F8A0C /* QuizzesView.swift in Sources */,
 				89F41A67294A375900A7BED8 /* HomeView.swift in Sources */,
+				8934A362294ACC74008CEACA /* MyExpenses.xcdatamodeld in Sources */,
+				8934A35C294AC11B008CEACA /* LockViewModel.swift in Sources */,
 				89F41A53294A2F9E00A7BED8 /* Tab.swift in Sources */,
 				89F41A93294A3C5600A7BED8 /* CourseSection.swift in Sources */,
 				89F41A57294A317F00A7BED8 /* AnimatableFontModifier.swift in Sources */,
@@ -517,6 +585,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8934A360294ACC74008CEACA /* MyExpenses.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8934A361294ACC74008CEACA /* MyExpenses.xcdatamodel */,
+			);
+			currentVersion = 8934A361294ACC74008CEACA /* MyExpenses.xcdatamodel */;
+			path = MyExpenses.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 89F41A35294A2ADA00A7BED8 /* Project object */;
 }

@@ -5,6 +5,7 @@ struct ContentView: View {
     @AppStorage("selectedTab") var selectedTab: Tab = .home
     @AppStorage("showAccount") var showAccount = false
     
+    
     init() {
         showAccount = false
     }
@@ -16,8 +17,7 @@ struct ContentView: View {
                 case .home:
                     HomeView()
                 case .learn:
-//                    LearnView()
-                    QuizView(quizGame: QuizGame())
+                    QuizzesView()
                 case .notifications:
                     NotificationsView()
                 case .profile:
@@ -35,7 +35,6 @@ struct ContentView: View {
                     .accessibilityIdentifier("Identifier")
             }
         }
-//        .dynamicTypeSize(.large ... .xxLarge)
         .sheet(isPresented: $showAccount) {
             AccountView()
         }
@@ -46,6 +45,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(Model())
+            .previewInterfaceOrientation(.portrait)
     }
 }
 
